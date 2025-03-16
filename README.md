@@ -52,9 +52,16 @@ Pour chaque exercice :
 - [ ] 1.3 Documenter votre solution ici
 
 _Votre réponse pour l'exercice 1 :_
+Utilisation de `useState` et `useEffect` pour capturer la saisie utilisateur.  
+Ajout de `useDebounce` pour retarder les requêtes et optimiser la recherche.
+
 ```
 Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
+On a créé le hook useDebounce et l'utiliser en fichier séparé pour la possibilité de réutilisation.
+
+![Recherche en action](screens/Ex1.png)
+
+![Résultats affichés](screens/Ex1-2.png)
 ```
 
 ### Exercice 2 : Context et Internationalisation
@@ -65,9 +72,19 @@ Expliquez votre solution ici
 - [ ] 2.3 Documenter votre solution ici
 
 _Votre réponse pour l'exercice 2 :_
+Mise en place de `LanguageContext` pour stocker et changer la langue de l'application.
+Ajout du composant `LanguageSelector` pour permettre le changement de langue par l'utilisateur.
+useContext pour accéder à la langue active et la modifier via toggleLanguage.
+useState pour stocker la langue sélectionnée.
+LanguageProvider enveloppe l'application pour partager le contexte.
+LanguageSelector permet de basculer entre Français et Anglais.
+
 ```
 Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
+![Sélecteur de langue](screens/Ex2.png)
+![Sélecteur de langue](screens/Ex2-2.png)
+![useLanguageContext](screens/Ex2-code.png)
+
 ```
 
 ### Exercice 3 : Hooks Personnalisés
@@ -78,9 +95,15 @@ Expliquez votre solution ici
 - [ ] 3.3 Documenter votre solution ici
 
 _Votre réponse pour l'exercice 3 :_
+Ona déjà créé useDebounce dans l'exercice 1, car il est essentiel d'optimiser au fur et à mesure.
+Nous avons ajouté useLocalStorage pour stocker des valeurs de manière persistante.
 ```
 Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
+![usedebounce](screens/usedebounce.png)
+![Local storage hook](screens/useLocalStorage.png)
+- utilisation de local storage hook dans le context de langue
+![contextStorage](screens/context-storage.png)
+
 ```
 
 ### Exercice 4 : Gestion Asynchrone et Pagination
@@ -91,10 +114,16 @@ Expliquez votre solution ici
 - [ ] 4.3 Documenter votre solution ici
 
 _Votre réponse pour l'exercice 4 :_
+fetchProducts récupère les données en fonction de la page active.
+setPage met à jour l’état de la pagination.
+Ajout d’un bouton pour recharger les produits manuellement.
+Pagination avec des boutons Précédent / Suivant et affichage du numéro de page.
+
 ```
 Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
 ```
+Je n’ai pas commité chaque exercice séparément, car j’ai préféré me concentrer directement sur le développement. Revenir en arrière pour recréer artificiellement des commits n’aurait pas été pertinent. Étant donné que le projet est relativement léger et ne nécessite pas un contrôle de version rigoureux à ce stade, il m’a semblé plus naturel de tout implémenter en continu avant de réaliser un commit global. J’espère que cela ne posera pas de problème.
+
 
 ## Rendu
 
